@@ -28,15 +28,29 @@
     --gray1: #8987A1;
     --orage1: #E95A08;
 }
-img{
-    max-width: 100%;
-}
+
 /* share style  */
-.section-discription{
+.section-discription {
     font-size: 1.3rem;
     color: rgba(0, 0, 0, 0.5);
     margin-top: 13px;
 }
+
+.primary-btn {
+    background-color: var(--orage1);
+    color: white;
+    padding: 1.2rem 5rem;
+    border: none;
+    margin-top: 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 3.1rem;
+    font-weight: 700;
+}
+
 /* header section style start  */
 header {
     max-width: 1140px;
@@ -80,25 +94,72 @@ nav {
     color: #000000;
     font-weight: 700;
 }
+
 /* banner section start  */
-.banner{
+.banner {
     display: flex;
     align-items: flex-end;
     margin-top: 7.5rem;
 }
-.banner-left{
+
+.banner-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.banner-left h1{
+
+.banner-left h1 {
     color: var(--orage1);
-    font-size: 4rem ;
+    font-size: 4rem;
     font-weight: 700;
 }
-.banner-left h1 span{
+
+.banner-left h1 span {
     color: #000000;
 }
+
+/* main section styles start  */
+main {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.plants-content {
+    max-width: 888px;
+    text-align: center;
+    margin: auto;
+    margin-top: 7.5rem;
+}
+
+.plants-content h2 span {
+    color: var(--orage1);
+}
+
+.cards-container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.25rem;
+    row-gap: 1.75rem;
+}
+
+.card {
+    max-width: 277px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    color: #000000;
+}
+
+.card p:nth-child(3) {
+    font-weight: bold;
+}
+
 /* media quary start  */
 @media (max-width:576px) {
     .first-link {
@@ -109,17 +170,35 @@ nav {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
     /* banner  */
-    .banner{
+    .banner {
         flex-direction: column-reverse;
-        
+
     }
-    .banner-left h1{
+
+    .banner-left h1 {
         margin: 1.75rem 0;
         font-size: 24px;
         margin-bottom: 13px;
     }
-    .banner-left{
+
+    .banner-left {
         margin: 1.75rem 1rem;
     }
+
+    img {
+        max-width: 100%;
+    }
+    /* main section  */
+    .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+     margin-left: 1rem;
+    margin-right: 1rem; 
+    .primary-btn {
+    padding: 1.2rem 1.6rem;}
+}
+.section-discription {
+    padding: 0 2rem;
+}
 }
