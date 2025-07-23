@@ -1,0 +1,68 @@
+/* fonts  */
+/* noto serif  */
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* inter  */
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* common */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --gray1: #8987A1;
+    --orage1: #E95A08;
+}
+/* header section style start  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 1.8rem auto;
+    
+}
+.links{
+    display: flex;
+    gap: 3rem;
+}
+.first-link{
+    display: flex;
+    gap: 3rem;
+}
+.link{
+    list-style: none;
+}
+.link a,.first-link a{
+    text-decoration: none;
+    color: var(--gray1);
+}
+.links> .link:first-child a{
+    color:#252432 ;
+    font-weight: 700;
+}
+.links> .link:last-child a{
+    color:#000000 ;
+    font-weight: 700;
+}
+
+@media (max-width:576px) {
+    .first-link{
+        display: none;
+    }
+    nav{
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+}
