@@ -167,12 +167,22 @@ main> section{
     display: flex;
     gap: 3.75rem;
     align-items: center;
+    position: relative;
 }
-
+.badge{
+    max-width: 287px;
+    position: absolute;
+    top: -20%;
+    right: 45%;
+}
+.badge img{
+    width: 100%;
+}
 /* media quary start  */
 @media (max-width:576px) {
     .first-link,
-    .plants-lover h2 br {
+    .plants-lover h2 br,
+    .badge {
         display: none;
     }
 
@@ -226,4 +236,5 @@ main> section{
     font-size: .875rem;
     list-style: disc !important;
 }
+
 }
