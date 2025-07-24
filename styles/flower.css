@@ -165,10 +165,11 @@ nav {
 .plants-lover {
     display: flex;
     gap: 3.75rem;
-    align-items: center;
     position: relative;
 }
-
+.plants-lover-right{
+    margin-top: 2rem;
+}
 .badge {
     max-width: 287px;
     position: absolute;
@@ -361,7 +362,9 @@ footer,
         margin-left: 1rem;
         margin-right: 1rem;
     }
-
+    .link{
+        padding-bottom: 0;
+    }
     /* banner  */
     .banner {
         flex-direction: column-reverse;
@@ -430,7 +433,7 @@ footer,
     .collection {
         grid-template-columns: repeat(1, 1fr);
         max-width: 367px;
-        margin: 0 1rem;
+        margin: 0 auto;
     }
     .collection-img-3 img{
         width: 100%;
@@ -487,5 +490,8 @@ footer,
     .footer-column-3 {
         justify-content: flex-start;
         margin-bottom: 3.1rem;
+    }
+    .socialmedia-logo{
+        margin-top: 1rem;
     }
 }
