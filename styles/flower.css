@@ -192,7 +192,8 @@ nav {
     margin-top: 7.5rem;
     position: relative;
 }
-.join img{
+
+.join img {
     position: absolute;
     z-index: -1;
 }
@@ -222,6 +223,39 @@ nav {
     max-height: 100%;
     margin: 0;
     font-weight: 400;
+}
+
+/* footer section style start  */
+footer,
+.footer-column-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column-1 p {
+    max-width: 360px;
+}
+
+.footer-column-2 {
+    gap: 110px;
+}
+
+.link {
+    padding-bottom: 2rem;
+}
+
+.footer-column-3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.socialmedia-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 /* media quary start  */
@@ -274,7 +308,10 @@ nav {
     }
 
     /* plants-lover section  */
-    .plants-lover {
+
+    .plants-lover,
+    footer,
+    .footer-column-2 {
         flex-direction: column;
     }
 
@@ -289,17 +326,19 @@ nav {
 
     .plants-lover ul li {
         font-size: .875rem;
-        
+
     }
 
     /* jont section  */
-    .join{
+    .join {
         height: 276px;
     }
-    .join img{
+
+    .join img {
         height: 276px;
         object-fit: cover;
     }
+
     .join-input {
         max-height: 4.1rem;
     }
@@ -314,5 +353,24 @@ nav {
 
     .primary-btn {
         padding: 1.2rem 2rem;
+    }
+
+    /* footer section  */
+    footer {
+        padding-left: 1.25rem;
+    }
+
+    .footer-column-1 p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-column-2 {
+        gap: 0px;
+    }
+
+    .footer-column-3 {
+        justify-content: flex-start;
+        margin-bottom: 3.1rem;
     }
 }
