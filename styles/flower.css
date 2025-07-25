@@ -384,9 +384,7 @@ footer,
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    .link{
-        padding-bottom: 0;
-    }
+    
     /* banner  */
     .banner {
         flex-direction: column-reverse;
