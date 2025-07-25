@@ -61,56 +61,56 @@
                     <img src="./assets/sample-flower-image.png" alt="flower tob image">
                     <p class="section-discription">Lily Blossom</p>
                     <p class="section-discription">20 USD</p>
-                    <button class="primary-btn">ADD TO CART</button>
+                    <button class="primary-btn cardt-btn">ADD TO CART</button>
                 </div>
                 <!-- card 2 -->
                 <div class="card">
                     <img src="./assets/sample-flower-image.png" alt="flower tob image">
                     <p class="section-discription">Lily Blossom</p>
                     <p class="section-discription">20 USD</p>
-                    <button class="primary-btn">ADD TO CART</button>
+                    <button class="primary-btn cardt-btn">ADD TO CART</button>
                 </div>
                 <!-- card 3 -->
                 <div class="card">
                     <img src="./assets/sample-flower-image.png" alt="flower tob image">
                     <p class="section-discription">Lily Blossom</p>
                     <p class="section-discription">20 USD</p>
-                    <button class="primary-btn">ADD TO CART</button>
+                    <button class="primary-btn cardt-btn">ADD TO CART</button>
                 </div>
                 <!-- card 4 -->
                 <div class="card">
                     <img src="./assets/sample-flower-image.png" alt="flower tob image">
                     <p class="section-discription">Lily Blossom</p>
                     <p class="section-discription">20 USD</p>
-                    <button class="primary-btn">ADD TO CART</button>
+                    <button class="primary-btn cardt-btn">ADD TO CART</button>
                 </div>
                 <!-- card 5 -->
                 <div class="card">
                     <img src="./assets/sample-flower-image.png" alt="flower tob image">
                     <p class="section-discription">Lily Blossom</p>
                     <p class="section-discription">20 USD</p>
-                    <button class="primary-btn">ADD TO CART</button>
+                    <button class="primary-btn cardt-btn">ADD TO CART</button>
                 </div>
                 <!-- card 6 -->
                 <div class="card">
                     <img src="./assets/sample-flower-image.png" alt="flower tob image">
                     <p class="section-discription">Lily Blossom</p>
                     <p class="section-discription">20 USD</p>
-                    <button class="primary-btn">ADD TO CART</button>
+                    <button class="primary-btn cardt-btn">ADD TO CART</button>
                 </div>
                 <!-- card 7 -->
                 <div class="card">
                     <img src="./assets/sample-flower-image.png" alt="flower tob image">
                     <p class="section-discription">Lily Blossom</p>
                     <p class="section-discription">20 USD</p>
-                    <button class="primary-btn">ADD TO CART</button>
+                    <button class="primary-btn cardt-btn">ADD TO CART</button>
                 </div>
                 <!-- card 8 -->
                 <div class="card">
                     <img src="./assets/sample-flower-image.png" alt="flower tob image">
                     <p class="section-discription">Lily Blossom</p>
                     <p class="section-discription">20 USD</p>
-                    <button class="primary-btn">ADD TO CART</button>
+                    <button class="primary-btn cardt-btn">ADD TO CART</button>
                 </div>
             </div>
         </section>
@@ -209,6 +209,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        const cardtbtn = document.querySelectorAll('.cardt-btn');
+        cardtbtn.forEach(cardtbtn  => {
+            cardtbtn.addEventListener('click', () =>{
+                alert('Cardt Added')
+            })
+        })
+    </script>
 </body>
 
 </html>
