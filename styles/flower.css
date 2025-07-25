@@ -168,7 +168,9 @@ nav {
 .card p:nth-child(3) {
     font-weight: bold;
 }
-
+.card button{
+    cursor: pointer;
+}
 /* plants-lover setcion start  */
 .plants-lover {
     display: flex;
