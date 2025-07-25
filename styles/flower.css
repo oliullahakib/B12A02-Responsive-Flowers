@@ -341,6 +341,11 @@ footer,
 .footer-column-2 {
     gap: 110px;
 }
+
+.pb2rem {
+    padding-bottom: 2rem;
+}
+
 .footer-column-3 {
     display: flex;
     justify-content: center;
