@@ -192,7 +192,7 @@ nav {
     position: absolute;
     top: -20%;
     right: 45%;
-    animation: spin 1s ease-in 1s infinite forwards;
+    animation: spin 4s ease-in 1s infinite forwards;
 }
 
 .badge img {
@@ -494,6 +494,178 @@ footer,
         height: 276px;
         object-fit: cover;
     }
+
+    .join-input {
+        max-height: 4.1rem;
+    }
+
+    .join h2 {
+        font-size: 1.25rem;
+    }
+
+    #email {
+        width: 13rem;
+    }
+
+    .primary-btn {
+        padding: 1.2rem 2rem;
+    }
+
+    /* footer section  */
+    footer {
+        padding-left: 1.25rem;
+    }
+
+    .footer-column-1 p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-column-2 {
+        gap: 0px;
+    }
+
+    .footer-column-3 {
+        justify-content: flex-start;
+        margin-bottom: 3.1rem;
+    }
+
+    .socialmedia-logo {
+        margin-top: 1rem;
+    }
+}
+
+/* media quary for tablet start  */
+.indication {
+    display: none;
+}
+
+@media (max-width:992px) {
+    .indication {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .first-link,
+    .plants-lover h2 br,
+    .badge {
+        display: none;
+    }
+
+    nav {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* banner  */
+    .banner {
+        flex-direction: column-reverse;
+
+    }
+
+    .banner-left h1 {
+        margin: 1.75rem 0;
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+
+    .banner-left {
+        margin: 1.75rem 1rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    /* plants section  */
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        justify-items: center;
+    }
+    .primary-btn {
+        padding: 1.2rem 1.6rem;
+    }
+
+    .section-discription {
+        padding: 0 0;
+    }
+
+    /* plants-lover section  */
+
+    .plants-lover,
+    footer,
+    .footer-column-2 {
+        flex-direction: column;
+    }
+
+    .plants-lover h2 {
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+    }
+
+    .plants-lover ul {
+        padding-left: 2.5rem;
+    }
+
+    .plants-lover ul li {
+        font-size: .875rem;
+
+    }
+
+    .plants-lover-left {
+        text-align: center;
+    }
+
+    /* latest deal  */
+    .deals-text {
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 3.1rem;
+
+    }
+
+    .collection {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 367px;
+        margin: 0 auto;
+    }
+
+    .collection-img-1 img,
+    .collection-img-2 img,
+    .collection-img-3 img {
+        filter: brightness(.4);
+    }
+
+    .collection-img-3 img {
+        width: 100%;
+
+    }
+
+    .collection-img-3 {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .collection-3-text {
+        font-size: 1.25rem;
+    }
+
+    /* jont section  */
+    .join {
+        height: 276px;
+    }
+
+    /* .join img {
+        height: 276px;
+        object-fit: cover;
+    } */
 
     .join-input {
         max-height: 4.1rem;
