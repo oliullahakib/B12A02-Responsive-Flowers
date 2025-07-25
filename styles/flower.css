@@ -28,15 +28,18 @@
     --gray1: #8987A1;
     --orage1: #E95A08;
 }
+
 /* animation section  */
 @keyframes spin {
-    from{
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
+
 /* share style  */
 .section-discription {
     font-size: 1.3rem;
@@ -168,24 +171,28 @@ nav {
 .card p:nth-child(3) {
     font-weight: bold;
 }
-.card button{
+
+.card button {
     cursor: pointer;
 }
+
 /* plants-lover setcion start  */
 .plants-lover {
     display: flex;
     gap: 3.75rem;
     position: relative;
 }
-.plants-lover-right{
+
+.plants-lover-right {
     margin-top: 2rem;
 }
+
 .badge {
     max-width: 287px;
     position: absolute;
     top: -20%;
     right: 45%;
-    animation: spin 1s ease-in 1s infinite forwards ;
+    animation: spin 1s ease-in 1s infinite forwards;
 }
 
 .badge img {
@@ -361,11 +368,12 @@ footer,
 }
 
 /* media quary start  */
-.indication{
+.indication {
     display: none;
 }
+
 @media (max-width:576px) {
-    .indication{
+    .indication {
         display: flex;
         justify-content: space-between;
         padding-left: 1rem;
@@ -384,7 +392,7 @@ footer,
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    
+
     /* banner  */
     .banner {
         flex-direction: column-reverse;
@@ -448,24 +456,34 @@ footer,
         padding-left: 1rem;
         padding-right: 1rem;
         margin-bottom: 3.1rem;
-        
+
     }
+
     .collection {
         grid-template-columns: repeat(1, 1fr);
         max-width: 367px;
         margin: 0 auto;
     }
-    .collection-img-3 img{
-        width: 100%;
-       
+
+    .collection-img-1 img,
+    .collection-img-2 img,
+    .collection-img-3 img {
+        filter: brightness(.4);
     }
+
+    .collection-img-3 img {
+        width: 100%;
+
+    }
+
     .collection-img-3 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.collection-3-text{
-    font-size: 1.25rem;
-}
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .collection-3-text {
+        font-size: 1.25rem;
+    }
 
     /* jont section  */
     .join {
@@ -511,7 +529,8 @@ footer,
         justify-content: flex-start;
         margin-bottom: 3.1rem;
     }
-    .socialmedia-logo{
+
+    .socialmedia-logo {
         margin-top: 1rem;
     }
 }
